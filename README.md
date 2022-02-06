@@ -1,4 +1,25 @@
-# Replit Solidity Template
+# Escrow contract
+
+1. Initialize Escrow contract
+* in EscrowNFT run the view function "contractAddress", then copy the output. This is the initialized contract address for EscrowNFT
+* in Escrow, find "initialize" function. paste contents of clipboard into value for _escrowNftAddress and run. This initializes the Escrow contract.
+* now, Escrow contract linked to EscrowNFT contract
+
+2. Transfer ownership (set ownership to Escrow) so we can call mint()
+* in Escrow, run the view function contractAddress
+* in EscrowNFT, find transferOwnership function. paste the output of contractAddress here for newOwner (which is the Escrow contract)
+* run transferOwnership function
+
+3. Escrow Eth
+* in Escrow, find escrowEth function
+* specify your wallet address, a short duration, and a small amount of Ether
+* run escrowEth function and approve the metamask popup
+
+
+
+
+
+# Replit Solidity Template notes
 Welcome to the world of Ethereum and web3! This is a beta template for Solidity development on Replit. Solidity is the language used to create Smart Contracts, which are programs that run on the Ethereum Blockchain.
 
 Features include:
